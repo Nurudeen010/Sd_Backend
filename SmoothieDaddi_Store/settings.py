@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-p0!rdtbu+ja%!7n4ly%_djzua(lpmvb#@#cgunvmo*+nqp5ng@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -109,25 +109,6 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
-CORS_ORIGIN_ALLOW_ALL = True  # Set to True to allow all origins
-CORS_ALLOW_CREDENTIALS = True  # Set to True if you allow cookies to be included in CORS requests
-CORS_ALLOWED_ORIGINS = [       # Set a list of allowed origins (e.g., ['https://example.com'])
-    'https://build-eight-phi.vercel.app',
-]
-CORS_ALLOWED_METHODS = [      # Set the allowed HTTP methods
-    'GET',
-    'POST',
-    'PUT',
-    'PATCH',
-    'DELETE',
-    'OPTIONS',
-]
-CORS_ALLOWED_HEADERS = [      # Set the allowed request headers
-    'Accept',
-    'Accept-Language',
-    'Content-Type',
-    'Authorization',
-]
 
 AUTH_PASSWORD_VALIDATORS = [
     {
